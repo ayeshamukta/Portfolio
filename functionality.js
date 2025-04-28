@@ -25,7 +25,8 @@ workBtn.addEventListener('click',()=>
 
 
 const navbars = document.querySelectorAll('header ul li a');
-// console.log(navbars);
+
+console.log(navbars);
 
 navbars.forEach(link=>
 {
