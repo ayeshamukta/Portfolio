@@ -1,0 +1,11 @@
+.active
+{
+    color: white;
+    background-color: #171650;
+}
+.nav-active
+{
+    color: #171650;
+    font-weight: bold;
+}
+
