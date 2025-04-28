@@ -1,27 +1,27 @@
 
 
-const workBtn = document.getElementById('workButton'); 
-const cvBtn = document.getElementById('cvButton'); 
+// const workBtn = document.getElementById('workButton'); 
+// const cvBtn = document.getElementById('cvButton'); 
 
-function viewWork() {
-    // window.location.href='#projects'
+// function viewWork() {
+//     // window.location.href='#projects'
     
-    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+//     document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
 
     
     
-}
+// }
 
-cvBtn.addEventListener('click',()=>
-{
-    cvBtn.classList.add('active');
-    workBtn.classList.remove('active')
-})
-workBtn.addEventListener('click',()=>
-{
-    cvBtn.classList.remove('active');
-    workBtn.classList.add('active')
-})
+// cvBtn.addEventListener('click',()=>
+// {
+//     cvBtn.classList.add('active');
+//     workBtn.classList.remove('active')
+// })
+// workBtn.addEventListener('click',()=>
+// {
+//     cvBtn.classList.remove('active');
+//     workBtn.classList.add('active')
+// })
 
 
 const navbars = document.querySelectorAll('header ul li a');

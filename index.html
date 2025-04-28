@@ -13,7 +13,7 @@
     <!-- </header> -->
     <header class="w-full bg-slate-200 pb-12">
       <!-- navbar -->
-      <div  class="bg-base-100 w-full fixed top-0 shadow-sm hidden md:block">
+      <div  class="bg-base-100 z-50 w-full backdrop-blur-none fixed top-0 shadow-sm hidden md:block">
         <div class="navbar max-w-7xl mx-auto px-4">
           <div class="flex-1">
             <a class="btn btn-ghost text-xl">Ayesha Siddiqua Mukta</a>
@@ -42,13 +42,14 @@
           I have a strong passion for technology, problem-solving, and building user-centered web experiences.
           I'm skilled in HTML, CSS, Tailwind CSS, Bootstrap, JavaScript, MySQL, C++, and Python and I'm always excited to learn more.
           Right now, I'm looking for opportunities where I can apply my technical skills, work on real-world projects, and keep growing as a developer.
-          Thanks for stopping by. Feel free to explore my work and see what I’ve been up to!
+          Thanks for stopping by. Feel free to explore my work and see what I've been up to!
         </p>
     
         <div class="flex flex-col md:flex-row gap-4 justify-center">
-          <button id="workButton" onclick="viewWork()" class="border rounded-xl px-4 py-2">View My Work</button>
+          <!-- <button id="workButton" onclick="viewWork()" >View My Work</button> -->
+          <a class="border rounded-xl items-center justify-center px-4 py-2  " href="#projects">View My Work</a>
     
-          <a href="image/Ayesha_Siddiqua_Mukta.pdf" download="" class="border text-center rounded-xl flex items-center gap-2 px-4 py-2">
+          <a href="image/Ayesha_Siddiqua_Mukta.pdf" download="" class="border justify-center   rounded-xl flex   gap-2 px-4 py-2">
             <span>Download Resume</span>
             <img width="32px" src="./image/download.png" alt="loading">
           </a>
@@ -214,7 +215,7 @@
         </div>
        </section>
       <!-- Education -->
-       <section id="education" class="lg:w-[1200px] p-10 mt-24 mx-auto mb-12">
+       <section id="education" class="lg:w-[1200px] p-10 mt-24 mx-auto ">
             <h5 class="font-semibold text-4xl mb-6">Education</h5>
             <div>
                 <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -302,8 +303,9 @@
        </section>
 
        <!-- Contact -->
-        <section id="contact" class="md:w-[1200px] mt-24 mx-auto flex flex-col lg:flex-row p-10 justify-around">
-            <div class="flex items-center gap-3">
+        <section id="contact" class="md:w-[1200px]  mx-auto flex flex-col lg:flex-row  p-10 justify-around">
+            <div class="mb-4 space-y-3">
+              <div class="flex items-center gap-3 ">
                 <img class="w-9" src="image/telephone_724664.png" alt="loading">
                 <div>
                     <p class="font-bold text-2xl">Contact Me</p>
@@ -327,6 +329,19 @@
                     
                 </div>
             </div>
+            </div>
+            
+            <!-- form -->
+             <div class="space-y-3">
+              <input type="text" placeholder="Name" class="input input-primary" />
+              
+              <input type="text" placeholder="Email" class="input input-primary" />
+              <br>
+              <input type="text" placeholder="Subject" class="input input-primary" />
+              <textarea type="text" placeholder="Description" class="textarea textarea-primary"></textarea>
+              <br>
+              <button class="btn btn-primary px-14 rounded-lg btn-lg">Send</button>
+             </div>
             
         </section>
         <!-- Footer -->
